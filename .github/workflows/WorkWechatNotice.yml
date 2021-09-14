@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - run: bash wechat_notice.sh
+      - run: bash wechat_notice.sh ${{ secrets.Work_Wechat_Bot_Key_01 }}

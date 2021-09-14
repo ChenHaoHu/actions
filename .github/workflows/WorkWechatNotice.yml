@@ -1,0 +1,10 @@
+name: WorkWechatNotice
+on:
+  schedule:
+    - cron: "* * * * *"
+
+jobs:
+  reminder:
+    runs-on: ubuntu-latest
+    steps:
+      - run: wechat_notice.sh
